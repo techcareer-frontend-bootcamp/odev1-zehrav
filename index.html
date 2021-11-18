@@ -11,7 +11,7 @@
        max-width: 1200px;
        margin: auto;
      }
-     header, nav, section, article, footer {
+     header, nav, section, article, footer{
       border: 1px solid grey;
       margin: 25px;
       padding: 10px;
@@ -21,6 +21,7 @@
      nav ol li { 
        display: inline; 
       }
+   
    </style>
 
 </head>
@@ -28,11 +29,49 @@
 <body>
 
   <!-- Header  -->  
+<header>
+  <h1>HTML İSKELET YAPISI</h1>
+</header>
+
+
   <!-- Menu  --> 
- 
+ <nav>
+   <a href="/">Anasayfa</a>
+   <a href="/">Hakkımızda</a>
+   <a href="/">Kalite</a>
+   <a href="/">İletişim</a>
+ </nav>
   <!-- Content  --> 
+<section><h3>Ünlü Ülkeler</h3>
+  <article><b>Türkiye</b>
+    <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> Eveniet dolorum aliquam corrupti consequatur tenetur accusamus maiores provident nisi, quo <u>laudantium nihil rem commodi cupiditate perferendis sed dignissimos eligendi nobis incidunt</u>.</p>
+  </article>
+
+  <article>İrlanda
+    <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> Eveniet dolorum aliquam corrupti consequatur tenetur accusamus maiores provident nisi, quo <u>laudantium nihil rem commodi cupiditate perferendis sed dignissimos eligendi nobis incidunt.</u></p>
+  </article>
+  
+</section>
+
+<section><h3>İletişim</h3>
+Kullanıcı Adı: <input type="text" name="kullaniciAdi" placeholder="Zorunlu alandır" required>
+Mail: <input type="text" name="email" placeholder="Zorunlu Alandır" required>
+Konu: <input type="text" name="konu" placeholder="Zorunlu Alandır" required>
+Cinsiyet: 
+<input type="radio" id="kadin" value="kadin" > 
+<label for="kadin">Kadın</label>
+
+<input type="radio" id="erkek" value="erkek">
+<label for="erkek">Erkek</label>
+<button type="button" onclick="alert('Temizlendi')">Temizle</button>
+<button type="button" onclick="alert('Gönderildi')">Gönder</button>
+
+</section>
 
   <!-- Footer  -->  
+<footer>
+  <p> &copy; 2021 Tüm Hakları Saklıdır.</p>
+</footer>
 
 </body>
 </html>
