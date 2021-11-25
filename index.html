@@ -36,36 +36,48 @@
 
   <!-- Menu  --> 
  <nav>
-   <a href="/">Anasayfa</a>
-   <a href="/">Hakkımızda</a>
-   <a href="/">Kalite</a>
-   <a href="/">İletişim</a>
+   <ul>
+   <li><a href="/">Anasayfa</a></li>
+   <li><a href="/">Hakkımızda</a></li>
+   <li><a href="/">Kalite</a></li>
+   <li><a href="/">İletişim</a></li>
+  </ul>
  </nav>
   <!-- Content  --> 
-<section><h3>Ünlü Ülkeler</h3>
-  <article><b>Türkiye</b>
+<section>
+  <h3>Ünlü Ülkeler</h3>
+  <article>
+    <b>Türkiye</b>
     <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> Eveniet dolorum aliquam corrupti consequatur tenetur accusamus maiores provident nisi, quo <u>laudantium nihil rem commodi cupiditate perferendis sed dignissimos eligendi nobis incidunt</u>.</p>
   </article>
 
-  <article>İrlanda
+  <article>
+    <b>İrlanda</b>
     <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> Eveniet dolorum aliquam corrupti consequatur tenetur accusamus maiores provident nisi, quo <u>laudantium nihil rem commodi cupiditate perferendis sed dignissimos eligendi nobis incidunt.</u></p>
   </article>
   
 </section>
 
 <section><h3>İletişim</h3>
-Kullanıcı Adı: <input type="text" name="kullaniciAdi" placeholder="Zorunlu alandır" required>
-Mail: <input type="text" name="email" placeholder="Zorunlu Alandır" required>
-Konu: <input type="text" name="konu" placeholder="Zorunlu Alandır" required>
-Cinsiyet: 
-<input type="radio" id="kadin" value="kadin" > 
-<label for="kadin">Kadın</label>
 
-<input type="radio" id="erkek" value="erkek">
-<label for="erkek">Erkek</label>
-<button type="button" onclick="alert('Temizlendi')">Temizle</button>
-<button type="button" onclick="alert('Gönderildi')">Gönder</button>
+<form action="">
 
+ <label for="user_name">Kullanıcı Adı:</label>
+ <input type="text" id="user_name" placeholder="Zorunlu alandır" required>
+
+ <label for="user_mail">Mail:</label>
+ <input type="text" id="user_mail" placeholder="Zorunlu Alandır" required ="required">
+
+ <label for="user_subject">Konu:</label>
+ <input type="text" id="user_subject" placeholder="Zorunlu Alandır" required>
+
+ <label for="user_checbox">Kontrol:</label>
+ <input type="checkbox" id="user_checbox" required> 
+
+<button type="reset">Temizle</button>
+<button type="submit">Gönder</button>
+
+</form>
 </section>
 
   <!-- Footer  -->  
